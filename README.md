@@ -1,2 +1,15 @@
-# Contact-mangement-system-
-A Contact Management System is used to store and display contact names and phone numbers. It helps users manage their contacts easily.
+contacts = {}
+
+print("=== Contact Management System ===")
+
+name = input("Enter contact name: ")
+phone = input("Enter phone number: ")
+
+contacts[name] = phone
+
+print("\nContact Saved Successfully!")
+
+print("\nContact List:")
+for name, phone in contacts.items():
+    print("Name:", name)
+    print("Phone:", phone)
